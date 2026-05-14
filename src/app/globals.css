@@ -1,0 +1,186 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+/* Angled section dividers - consistent right slant on every section */
+section[data-tone] {
+  position: relative;
+}
+
+section[data-tone]:not(:first-of-type) {
+  clip-path: polygon(0 40px, 100% 0, 100% 100%, 0 100%);
+  margin-top: -40px;
+  padding-top: 40px;
+}
+
+@media (min-width: 640px) {
+  section[data-tone]:not(:first-of-type) {
+    clip-path: polygon(0 60px, 100% 0, 100% 100%, 0 100%);
+    margin-top: -60px;
+    padding-top: 60px;
+  }
+}
+
+.scrollbar-none {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.scrollbar-none::-webkit-scrollbar {
+  display: none;
+}
+
+html,
+body {
+  background: #05060A;
+  color: #F5F6FA;
+  -webkit-font-smoothing: antialiased;
+}
+
+.text-gradient {
+  background: linear-gradient(110deg, #60A5FA 0%, #A78BFA 45%, #F472B6 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.grid-bg {
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.04) 1px, transparent 1px);
+  background-size: 56px 56px;
+  mask-image: radial-gradient(ellipse 80% 60% at 50% 0%, #000 40%, transparent 100%);
+  -webkit-mask-image: radial-gradient(ellipse 80% 60% at 50% 0%, #000 40%, transparent 100%);
+}
+
+.glass {
+  position: relative;
+  background: rgba(255, 255, 255, 0.06);
+  backdrop-filter: blur(20px) saturate(1.4);
+  -webkit-backdrop-filter: blur(20px) saturate(1.4);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  transition:
+    transform 300ms cubic-bezier(0.16, 1, 0.3, 1),
+    border-color 300ms ease,
+    box-shadow 300ms ease;
+}
+
+.glass-strong {
+  position: relative;
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(28px) saturate(1.5);
+  -webkit-backdrop-filter: blur(28px) saturate(1.5);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  transition:
+    transform 300ms cubic-bezier(0.16, 1, 0.3, 1),
+    border-color 300ms ease,
+    box-shadow 300ms ease;
+}
+
+/* Gentle hover lift on cards */
+.glass:hover,
+.glass-strong:hover {
+  transform: translateY(-2px);
+  border-color: rgba(255, 255, 255, 0.22);
+  box-shadow: 0 20px 40px -20px rgba(0, 0, 0, 0.6);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .glass,
+  .glass-strong {
+    transition: none;
+  }
+  .glass:hover,
+  .glass-strong:hover {
+    transform: none;
+  }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+}
+
+.float-slow {
+  animation: float 6s ease-in-out infinite;
+}
+
+/* Scroll reveal - starts hidden, fades + slides up when in view.
+   Progressive enhancement: if JS is disabled, content still shows. */
+.reveal {
+  opacity: 0;
+  transform: translateY(32px);
+  transition: opacity 800ms cubic-bezier(0.16, 1, 0.3, 1),
+              transform 800ms cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: opacity, transform;
+}
+
+.reveal.is-in {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}
+
+/* No-JS fallback: show content if the is-in class never gets added */
+.no-js .reveal {
+  opacity: 1;
+  transform: none;
+}
+
+/* Sections with white tone: glass cards become opaque dark islands, */
+/* and any loose dark-bg-dependent borders flip to dark lines. */
+section[data-tone="white"] .glass {
+  background: rgba(10, 11, 20, 0.85);
+  backdrop-filter: blur(20px) saturate(1.4);
+  -webkit-backdrop-filter: blur(20px) saturate(1.4);
+  border-color: rgba(5, 6, 10, 0.15);
+}
+
+section[data-tone="white"] .glass-strong {
+  background: rgba(10, 11, 20, 0.9);
+  backdrop-filter: blur(28px) saturate(1.5);
+  -webkit-backdrop-filter: blur(28px) saturate(1.5);
+  border-color: rgba(5, 6, 10, 0.15);
+}
+
+section[data-tone="white"] .glass:hover,
+section[data-tone="white"] .glass-strong:hover {
+  border-color: rgba(5, 6, 10, 0.3);
+}
+
+/* The process section's ol uses a loose border-l outside any card. */
+/* Flip it to a dark line so the timeline stays visible on white. */
+section[data-tone="white"] ol {
+  border-color: rgba(5, 6, 10, 0.15);
+}
+
+/* Inside the dark glass cards on white sections, everything is already */
+/* back on a dark surface, so divider/border tweaks aren't needed there. */
+/* But any element sitting DIRECTLY on the white bg (not inside a glass */
+/* card) that relies on border-white/* will be invisible. Fix by scoping */
+/* to the section's direct children only. */
+section[data-tone="white"] > div > .border-t,
+section[data-tone="white"] > div > .border-b,
+section[data-tone="white"] > div > .border-y {
+  border-color: rgba(5, 6, 10, 0.1);
+}
