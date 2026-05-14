@@ -8,10 +8,10 @@ export const pack = {
     tagline: "Be first in the race for talent.",
   },
   role: {
-    title: "Talent Acquisition Partner",
+    title: "Founding Engineer",
     location: "Farringdon, EC1V\n(Tuesday and Thursday)",
     employmentType: "Full-time",
-    reportsTo: "Jamie Lyons, Founding Growth",
+    reportsTo: "Luke Morton, Founder & CEO",
     equity: "You'd be employee #6",
     startDate: "ASAP · flexible for notice",
     holiday: "28 days + bank holidays",
@@ -33,14 +33,14 @@ export const pack = {
         body: "MacBook, monitor, chair - you pick",
       },
     ],
-    hiringManagerFirstName: "Jamie",
+    hiringManagerFirstName: "Luke",
     snapshot:
-      "Own the hiring loop end-to-end at an AI hiring platform that's actually changing how recruiters work. You'll partner directly with our founding team, build the bar, and ship a candidate experience you'd want to be on the other side of.",
+      "Ship product end-to-end at an AI hiring platform that's actually changing how recruiters work. You'll pair with Orsi on architecture, own meaningful surface area, and get close enough to customers that what you build is shaped by real pain, not a Jira ticket.",
   },
   hero: {
-    eyebrow: "Our Talent Acquisition Job Pack",
+    eyebrow: "Our Founding Engineer Job Pack",
     line1: "Hi, we're hiring a",
-    line2: "Talent Acquisition Partner",
+    line2: "Founding Engineer",
     line3: "at First.",
     subhead:
       "We built this page to cover what you'd need to know to make an educated decision about whether you think we could be the right move for you.",
@@ -62,23 +62,23 @@ export const pack = {
   responsibilities: {
     heading: "What you'll actually do",
     items: [
-      "Own the full-cycle hiring loop for roles across product, engineering, GTM and ops.",
-      "Partner with our founding team to translate strategy into a hiring plan with real teeth.",
-      "Shape the product itself. Your expertise as a recruiter directly guides what we build, how it works, and what we ship next.",
-      "Run structured, inclusive interview loops, and train hiring managers to do the same.",
-      "Build a candidate experience that doubles as marketing for the First brand.",
-      "Be the sharpest user of First. Feed what's working and what isn't straight to engineering and product.",
+      "Ship product end-to-end. You write it, you ship it, you own it in production. There's no platform or DevOps team to throw things over the wall to.",
+      "Co-decide technical direction with Orsi. You're a peer, not a consultant - if you think a system should be designed differently, you argue for it and she listens.",
+      "Translate customer pain into product, directly. Watch sessions, read the support Slack, sit in on calls. We don't filter customer pain through PMs.",
+      "Help us hire. Build the rubric and run the technical stages for the engineers who join after you - Orsi shouldn't own every interview forever.",
+      "Be the sharpest user of our own AI tools. Claude, Cursor, our own product - push the limits and feed back what's working.",
+      "Raise the engineering bar. Code review, technical writing, demo culture. Lead by example.",
     ],
   },
   youAre: {
     heading: "You'll thrive here if…",
     items: [
-      "You've run full-cycle recruitment in a high-growth environment (ideally startup or scale-up).",
-      "You've hired across disciplines - not just tech, not just ops.",
-      "You care more about the experience a candidate has than the logo on the offer letter.",
-      "You're opinionated about structured hiring and can back it up.",
-      "You're excited by AI and want to use it to do the best work of your career - not afraid of it.",
-      "You're a generalist at heart. You love wearing many hats and thrive when the job description is just a starting point.",
+      "You've shipped product end-to-end at a startup or scale-up before. You've been the one, not part of a team of fifty. You've felt the chaos.",
+      "You're full-stack. Comfortable across the whole stack, even if you've got a stronger half.",
+      "You care about the user experience as much as the code quality. Technically beautiful but unusable doesn't count as beautiful here.",
+      "You're opinionated about good engineering. You have a point of view on testing, architecture and code review - and you can defend it.",
+      "You're excited by AI tooling. Claude, Cursor, whatever - not snobby about it, not afraid of it. You want to use it to do the best work of your career.",
+      "You're a generalist at heart. The JD is a starting point, not a ceiling.",
     ],
   },
   team: {
@@ -128,12 +128,12 @@ export const pack = {
         format: "Video call · Google Meet",
         with: "Jamie, Founding Growth",
         teaser:
-          "A real conversation. Mutual signal. No quiz-style screening.",
+          "A real conversation. Mutual signal. No whiteboard nonsense.",
         what:
-          "A real conversation - no screening-style quiz. We'll share more on First, the role, and why we think you could be great. You'll share what you're optimising for in your next move.",
+          "A real conversation - no live coding, no whiteboard, no quiz. We'll share more on First, the role, and why we think you could be great. You'll share what you're optimising for in your next move.",
         assessing: [
           "Clarity on what you're looking for next (and why)",
-          "How you talk about the craft of recruiting",
+          "How you talk about the craft of building",
           "Mutual signal: is there something here worth both our time?",
         ],
         prep:
@@ -142,42 +142,42 @@ export const pack = {
       },
       {
         step: "02",
-        title: "Craft deep-dive",
+        title: "Technical deep-dive",
         duration: "60 min",
-        format: "Video call · two interviewers",
-        with: "Danny and Orsi",
+        format: "Video call · Google Meet",
+        with: "Orsi, Founding Engineer",
         teaser:
-          "We walk through real loops you've run. You do the same back to us.",
+          "Orsi digs into real systems you've built. You do the same back to her.",
         what:
-          "We'll walk through your actual recruiting experience. Real loops you've run, real bar-raising decisions, real candidate experience trade-offs. We'll share the same about First.",
+          "Not a live coding test. Orsi walks through real systems you've shipped - why you made the choices you did, what you'd do differently now. She'll open a real piece of code you wrote and dig into the specifics. We want to see that you wrote it and you know it cold.",
         assessing: [
-          "Structured hiring judgement - how you design loops and scorecards",
-          "Candidate empathy - how you treat people when no one's watching",
-          "Ownership of outcomes - what you changed and what you'd do differently",
-          "Willingness to disagree with hiring managers when it matters",
+          "Depth of engineering judgement - real systems, real choices",
+          "How you think about trade-offs - speed vs. quality, build vs. buy, perfect vs. shipped",
+          "Code-level fluency on a real piece of code you wrote",
+          "Willingness to disagree with Orsi when she's wrong (she sometimes is)",
         ],
         prep:
-          "Pick 2–3 hiring stories you're proud of, and at least one where it went wrong. We care about the how, not the headcount. Bring specific numbers where you have them, honest gaps where you don't.",
-        decision: "Go / no-go within 3 working days. You'll get the panel's feedback in writing.",
+          "Pick 2–3 projects you're proud of, including at least one that didn't go well. Bring code we can look at if it's open. We care about the how, not the title.",
+        decision: "Go / no-go within 3 working days. Orsi writes the feedback.",
       },
       {
         step: "03",
         title: "The working session",
         duration: "90 min (48 hrs async prep + 60 min live)",
         format: "Async brief + live walkthrough",
-        with: "Founding team",
+        with: "Luke and Orsi",
         teaser:
-          "A real role brief, 48 hours to prep, £150 to cover your time. No gotchas.",
+          "A real problem we're working on. 48 hours to design it. £150 for your time. No gotchas.",
         what:
-          "We'll send you a short brief for a real role we're hiring for. You'll have 48 hours to put together a short (no more than 30 minutes of prep) sourcing and outreach plan. We'll walk through it together, live.",
+          "We'll send you a real problem we're working on right now - an API design, a data model, a tricky migration, whatever's live for us that week. You'll have 48 hours to prep a design, then we walk through it together, live.",
         assessing: [
-          "Strategic sourcing instinct - where would you actually look, and why",
-          "Prioritisation under time pressure (48 hours, not 48 days)",
-          "Written clarity - how you communicate a plan to a hiring manager",
-          "How you handle new information mid-conversation",
+          "System design instinct - where you start, and whether you ask the right clarifying questions before diving in",
+          "Prioritisation under time pressure - 48 hours, not 48 days. What's the MVP, what's nice-to-have",
+          "Written clarity - can another engineer pick up your design from the doc alone",
+          "How you handle new information mid-conversation - we may throw curveballs in the live session",
         ],
         prep:
-          "We send the brief, the rubric we'll score against, and a £150 voucher to cover your time - before you start. No trick questions. No gotchas. Reuse whatever tools you'd actually use on the job.",
+          "We send the brief, the rubric we'll score against, and a £150 voucher to cover your time - before you start. Use whatever tools you'd actually use on the job. AI included, obviously - assessing engineers in 2026 without it tests the wrong skill.",
         decision: "Go / no-go within 5 working days. You'll receive your scorecard with feedback.",
       },
       {
@@ -185,18 +185,18 @@ export const pack = {
         title: "Founder close",
         duration: "30 min",
         format: "Video or in-person (your choice)",
-        with: "Luke, Co-founder & CEO",
+        with: "Luke, Founder & CEO",
         teaser:
           "Final check both ways. Scorecard shared with you. Bring the hard questions.",
         what:
           "A final conversation to make sure we're both excited. We'll talk through the first 90 days, share our scorecard from the process, and give you space to ask anything you still want answered.",
         assessing: [
-          "Long-term alignment - are we building the same thing?",
+          "Long-term alignment - are we building the same thing for the next three to five years?",
           "Ambition fit - is this the size of the bet you want to take?",
           "Genuine curiosity about the business, not just the role",
         ],
         prep:
-          "Bring the hard questions. Runway, strategy, recent misses, who you'd report to if Jamie left tomorrow. Nothing's off limits.",
+          "Bring the hard questions. Runway, strategy, recent misses, how technical decisions actually get made, what happens when you and Orsi disagree. Nothing's off limits.",
         decision: "Offer or no-offer within 24 hours. Written feedback either way, every time.",
       },
     ],
@@ -209,22 +209,22 @@ export const pack = {
       {
         name: "Craft",
         body:
-          "Depth of recruiting expertise. Can you design a loop, build a scorecard, and source into a hard market?",
+          "Depth of engineering judgement. Can you design a system, ship it end-to-end, and explain why you made the choices you did?",
       },
       {
         name: "Judgement",
         body:
-          "Quality of the trade-offs you make. Speed vs. quality, experience vs. potential, push-back vs. alignment.",
+          "Quality of the trade-offs you make. Speed vs. quality, build vs. buy, perfect vs. shipped.",
       },
       {
         name: "Collaboration",
         body:
-          "How you work with hiring managers, candidates, and teammates. Especially under disagreement.",
+          "How you pair with Orsi on architecture, push back when she's wrong, and stay close to customers instead of building in a vacuum.",
       },
       {
         name: "Drive",
         body:
-          "Ownership, bias to action, and the instinct to go one step further than the job description asks.",
+          "Ownership, bias to action, and the instinct to go one step further than the ticket asks.",
       },
     ],
     rubric: [
@@ -312,7 +312,7 @@ export const pack = {
         },
         {
           name: "The working session",
-          body: "Use every tool you'd use on the job. Sourcing tools, AI writing help, even our product if you can get hold of it.",
+          body: "Use every tool you'd use on the job. Your editor, your AI assistant, your usual stack. We test the engineer, not the memory.",
         },
         {
           name: "Better questions for us",
@@ -324,7 +324,7 @@ export const pack = {
       title: "Where we'll ask you not to",
       items: [
         "Don't route live interviews through real-time answer-generation tools. We want to hear you, not your copilot.",
-        "Don't fabricate a CV or case. The craft deep-dive will catch it.",
+        "Don't fabricate a CV or a project. The technical deep-dive will catch it.",
         "Don't paste our brief into a model without adding your own judgement. The interesting bit is you.",
       ],
     },
@@ -338,7 +338,7 @@ export const pack = {
       },
       {
         title: "Bring stories",
-        body: "We're structured interviewers. Come with 3–4 real, specific examples from your hiring work - good and bad.",
+        body: "We're structured interviewers. Come with 3–4 real, specific examples from your engineering work - good and bad.",
       },
       {
         title: "Ask hard questions",
@@ -352,13 +352,13 @@ export const pack = {
   },
   comp: {
     heading: "Compensation & benefits",
-    headline: "£75,000 – £95,000 base · meaningful equity",
+    headline: "£100,000 – £130,000 base · meaningful equity",
     items: [
-      { label: "Base salary", value: "£75,000 – £95,000 depending on experience" },
+      { label: "Base salary", value: "£100,000 – £130,000 depending on experience" },
       { label: "Equity", value: "Meaningful stake - you're early" },
       { label: "Pension", value: "Matched to 5%" },
       { label: "Holiday", value: "28 days + bank holidays" },
-      { label: "Work setup", value: "Hybrid from London, or fully remote UK" },
+      { label: "Work setup", value: "Hybrid from Farringdon - Tuesday + Thursday in office" },
       { label: "Kit", value: "Whatever hardware helps you do your best work" },
       { label: "L&D", value: "£1,500 / year, no approval needed" },
       { label: "Health", value: "Private healthcare via Vitality" },
